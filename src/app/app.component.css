@@ -1,0 +1,62 @@
+.container-fluid{
+    display:grid;
+}
+.logo{
+    background-color:black;
+    color:white;
+    
+    width:200px;
+    height:70px;
+    padding:8px;
+    text-align:center;
+    display:inline-block;
+    margin:0;
+    box-sizing: border-box;
+
+}
+.patientcoordination{
+    width:1100px;
+    height:70px;
+    padding:10px;
+    
+    background-color:rgb(240, 239, 239);
+    color:black;
+    display:inline-block;
+    box-sizing:border-box;
+    
+    
+}
+.patientcoordination #right{
+float:right;
+}
+.patientcoordination #welcome{
+    
+    box-sizing:border-box;
+    display:inline-block;
+}
+span{
+    border-left:black solid 1px;
+    display:inline-block;
+    color:black;
+    
+    margin:4px;
+    height:20px;
+}
+a{
+    text-decoration: none;
+}
+#row2{
+    width: 1300px;
+    height:20px;
+    background-color:blue;
+}
+select{
+    padding:10px;
+}
+.inline{
+    display:inline-block;
+    margin:50px;
+}
+.textaligncenter{
+    text-align:center;
+}
