@@ -1,0 +1,63 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container-fluid">
+  <div class="row">
+    <div class="logo col-sm-4 col-xs-4 col-md-4 col-lg-4">
+      Fresenius kidney care
+    </div>
+    <div class="patientcoordination col-sm-6 col-xs-6 col-md-6 col-lg-6">
+      patient care coordination
+      <div id="right">
+      <div id="welcome">
+        welcome,sc1 RN(RN)
+      </div>
+
+      <span id="viewaudit"><a href="#">View Audit</a></span>
+      <span id="print"><a href="#">print</a></span>
+      <span id="help"><a href="#">Help</a></span>
+      <span id="logout"><a href="#">LogOut</a></span>
+      </div>
+
+    </div>
+    <div  style="background-color:blue"class="textaligncenter row">
+      
+        <div class="inline col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <select>
+                <option *ngFor="let clinic of clincinfo.clinics">{{clinic.number}}</option>
+                </select>
+                  
+        
+      </div>
+      <div class="inline col-xs-4 col-sm-4 col-md-4 col-lg-4">
+          <select>
+              <option *ngFor="let state of clincinfo.clinics">{{state.location}}</option>
+        
+              </select>
+                
+
+      </div>
+      <div class="inline col-xs-4 col-sm-4 col-md-4 col-lg-4">
+          <select>
+              <option *ngFor="let clinicname of clincinfo.clinics">{{clinicname.name}}</option>
+                
+              </select>
+                
+        
+        </div>
+        <p *ngIf="(error)">error in loading</p>
+
+
+
+
+
+    </div>
+  </div>
+</div>
+<div>child is {{childname}}</div>
+<app-lists *ngFor="let data of names" [name]="data"
+></app-lists>
+<nav>
+  <app-heroes (clicking)="receiveEvent($event)">Heroes</app-heroes>
+</nav>
+
+<a routerLink="/lists">lists</a>
+<router-outlet></router-outlet>
